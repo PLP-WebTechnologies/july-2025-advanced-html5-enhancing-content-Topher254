@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 assignment: SAROTA RAPHAEL</title>
+</head>
+<body>
+
+<header>
+    <h1>My HTML5 Content & Form</h1>
+</header>
+
+<main>
+    <!-- LISTS SECTION -->
+    <section>
+        <h2>My Favorite Hobbies</h2>
+        <ul>
+            <li>Reading books</li>
+            <li>Coding practice</li>
+            <li>Playing football</li>
+            <li>Watching movies</li>
+        </ul>
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section>
+        <h2>Weekly Study Schedule</h2>
+        <table border="1">
+            <tr>
+                <th>Day</th>
+                <th>Subject</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>HTML & CSS</td>
+                <td>2 hours</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>JavaScript</td>
+                <td>1.5 hours</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Python</td>
+                <td>2 hours</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- MEDIA SECTION -->
+    <section>
+        <h2>Motivational Audio & Image</h2>
+        <img src="https://via.placeholder.com/600x200" alt="Placeholder image" width="100%">
+        <br><br>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section>
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            
+            <!-- Personal Info -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="fullname" placeholder="Enter your full name" required minlength="3"><br><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email"><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="07xxxxxxxx" pattern="[0-9]{10}" required><br><br>
+            </fieldset>
+
+            <!-- Preferences -->
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <label for="fav-color">Favorite Color:</label><br>
+                <input type="color" id="fav-color" name="color"><br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="course">Select a Course:</label><br>
+                <select id="course" name="course" required>
+                    <option value="">--Choose--</option>
+                    <option value="html">HTML & CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="python">Python</option>
+                </select><br><br>
+            </fieldset>
+
+            <!-- Message -->
+            <fieldset>
+                <legend>Your Message</legend>
+                <textarea name="message" rows="4" placeholder="Write something..." required></textarea>
+            </fieldset><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 My WEEK 2 Assignment</p>
+</footer>
+
+</body>
+</html>
